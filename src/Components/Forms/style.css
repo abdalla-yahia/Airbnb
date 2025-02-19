@@ -13,13 +13,3 @@
     }
 }
 
-.circular-track {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
