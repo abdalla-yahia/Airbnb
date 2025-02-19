@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/Components/Header/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,10 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.className} bg-white text-gray-800 text-[1rem]  antialiased`}
       >
+        <Header />
         {children}
       </body>
+      {/* <a href="https://visitorbadge.io/status?path=https%3A%2F%2Ftalep-elm.vercel.app%2F">
+        <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftalep-elm.vercel.app%2F&countColor=%23263759" />
+      </a> */}
     </html>
   );
 }

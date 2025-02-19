@@ -1,0 +1,7 @@
+.card-body {
+    &:hover {
+        .arrow-icon{
+            display: block;
+        }
+    }
+}

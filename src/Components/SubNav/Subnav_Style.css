@@ -1,0 +1,6 @@
+.active_subnav {
+    :nth-child(1),:nth-child(2){
+        color: black  !important;
+    }
+    border-bottom: 2px solid black;
+}

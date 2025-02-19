@@ -1,0 +1,25 @@
+.change_dates_active{
+    background: #fff;
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+.Page_Dates_scrol_Calender {
+    scroll-snap-type: x mandatory;
+    .month_section {
+        scroll-snap-align: end;
+        width: 100vw;
+    }
+}
+
+.circular-track {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
